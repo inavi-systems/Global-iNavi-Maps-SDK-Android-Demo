@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="igm_app_name">Global iNavi Maps Demo</string>
+    <string name="igm_category">category</string>
+
+    <!-- Map -->
+    <string name="igm_category_map">Map</string>
+
+    <string name="igm_name_map_fragment">IgmMapFragment</string>
+    <string name="igm_description_map_fragment">Display the map using MapFragment</string>
+
+    <string name="igm_name_map_view">IgmMapView</string>
+    <string name="igm_description_map_view">Display the map by adding IgmMapView to the layout</string>
+
+    <!-- Shapes -->
+    <string name="igm_category_shapes">Shapes</string>
+
+    <string name="igm_name_marker">IgmMarker</string>
+    <string name="igm_description_marker">Marker</string>
+
+    <string name="igm_remove_marker">Remove all markers</string>
+    <string name="igm_remove_polygon">Remove all polygons</string>
+    <string name="igm_remove_polyline">Remove all polylines</string>
+    <string name="igm_remove_circle">Remove all circles</string>
+
+    <string name="igm_name_marker_overlap">IgmMarker Overlap</string>
+    <string name="igm_description_marker_overlap">Configure behavior when markers overlap</string>
+    <string name="igm_option_allow_overlap_markers">Allow marker overlap</string>
+    <string name="igm_option_allow_overlap_title">Allow title overlap</string>
+    <string name="igm_option_allow_overlap_symbols">Allow map symbol overlap</string>
+
+    <string name="igm_name_info_window">IgmInfoWindow</string>
+    <string name="igm_description_info_window">Info window</string>
+    <string name="igm_format_info_window_on_marker">Marker: %s</string>
+    <string name="igm_format_info_window_on_map">Coordinates: (%1$.5f, %2$.5f)</string>
+    <string name="igm_format_custom_info_window_on_map">(%1$.5f, %2$.5f)</string>
+    <string name="igm_option_use_custom_info_window_adapter">Use custom view for info window</string>
+    <string name="igm_content_description_icon">Icon</string>
+
+    <string name="igm_name_polygon">IgmPolygon</string>
+    <string name="igm_description_polygon">Draw polygons</string>
+
+    <string name="igm_name_polyline">IgmPolyline</string>
+    <string name="igm_description_polyline">Draw polylines</string>
+
+    <string name="igm_name_circle">IgmCircle</string>
+    <string name="igm_description_circle">Draw circles</string>
+
+    <string name="igm_name_global_z_index">Global Z-Index</string>
+    <string name="igm_description_global_z_index">Set shape rendering priority</string>
+    <string name="igm_option_polyline_under_circle">Render polylines behind circles</string>
+
+    <!-- Clustering -->
+    <string name="igm_category_clustering">Clustering</string>
+
+    <string name="igm_name_marker_clustering">Marker Clustering</string>
+    <string name="igm_description_marker_clustering">Marker clustering</string>
+    <string name="igm_format_cluster_click">Cluster clicked\nLocation: (%1$.5f, %2$.5f)\nItem count: %3$d</string>
+    <string name="igm_format_cluster_item_click">Item clicked\nLocation: (%1$.5f, %2$.5f)\nNumber: %3$d</string>
+
+    <!-- Camera -->
+    <string name="igm_category_camera">Camera</string>
+
+    <string name="igm_name_camera_move">Camera Move</string>
+    <string name="igm_description_camera_move">Move camera</string>
+    <string name="igm_text_animation_type">Animation: </string>
+    <string-array name="igm_option_array_animation_type">
+        <item>None</item>
+        <item>Easing</item>
+        <item>Fly</item>
+    </string-array>
+    <string name="igm_text_move_camera">Move camera</string>
+
+    <string name="igm_name_camera_fit_bounds">Camera Move to Fit Bounds</string>
+    <string name="igm_description_camera_fit_bounds">Move the camera to fit bounds</string>
+
+    <string name="igm_name_camera_events">Camera Events</string>
+    <string name="igm_description_camera_events">Camera events</string>
+    <string name="igm_format_camera_info">State: %1$s\nLocation: (%2$.5f, %3$.5f)\nZoom level: %4$.2f\nTilt: %5$.2f\nBearing: %6$.2f</string>
+    <string name="igm_toast_camera_update_finished">Camera update finished</string>
+    <string name="igm_toast_camera_update_cancelled">Camera update cancelled</string>
+
+    <!-- Click -->
+    <string name="igm_category_event">Click Events</string>
+    <string name="igm_name_event_click_map">Map Click</string>
+    <string name="igm_description_event_click_map">Handle map click, long-click events</string>
+
+    <string name="igm_event_map_click_listener_enabled">Enable click event</string>
+    <string name="igm_event_map_long_click_listener_enabled">Enable long-click event</string>
+    <string name="igm_format_event_map_click">Map %1$s\nScreen: (%2$.0f, %3$.0f)\nMap: (%4$.5f, %5$.5f)</string>
+
+    <string name="igm_name_event_click_shape">Shape Click</string>
+    <string name="igm_description_event_click_shape">Handle shape click events</string>
+    <string name="igm_event_shape_click_listener_enabled">Enable click event</string>
+    <string name="igm_event_shape_consume_click_event">Consume click event</string>
+
+    <!-- Map options -->
+
+    <string name="igm_category_map_option">Map Options</string>
+    <string name="igm_name_map_option_padding">Map Padding</string>
+    <string name="igm_description_map_option_padding">Configure map padding</string>
+    <string name="igm_option_apply_padding">Apply padding</string>
+
+    <string name="igm_name_map_option_gesture">Map Gesture</string>
+    <string name="igm_description_map_option_gesture">Configure map gestures</string>
+    <string name="igm_option_enabled_scroll">Scroll</string>
+    <string name="igm_option_enabled_zoom">Zoom</string>
+    <string name="igm_option_enabled_tilt">Tilt</string>
+    <string name="igm_option_enabled_bearing">Rotate</string>
+
+    <string name="igm_name_map_option_controller">Map Controller</string>
+    <string name="igm_description_map_option_controller">Configure map controllers</string>
+    <string name="igm_option_compass">Compass</string>
+    <string name="igm_option_scale_bar">Scale bar</string>
+    <string name="igm_option_zoom">Zoom controller</string>
+    <string name="igm_option_cur_location">Current location button</string>
+
+    <!-- Location -->
+    <string name="igm_category_location">Location</string>
+    <string name="igm_name_location_tracking_mode">User Tracking Mode</string>
+    <string name="igm_description_location_tracking_mode">Use location tracking mode</string>
+    <string name="igm_text_location_tracking_mode">Location tracking mode: </string>
+    <string-array name="igm_option_array_location_tracking_mode">
+        <item>None</item>
+        <item>NoTracking</item>
+        <item>Tracking</item>
+        <item>TrackingCompass</item>
+    </string-array>
+    <string name="igm_text_popup_ok">OK</string>
+
+    <string name="igm_name_location_icon">Location Icon</string>
+    <string name="igm_description_location_icon">Configure location icon</string>
+    <string name="igm_option_location_icon_visible">Show location icon</string>
+    <string name="igm_option_location_icon_image">Change icon image</string>
+    <string name="igm_option_location_icon_scale">Change icon scale</string>
+    <string name="igm_option_location_icon_circle_radius">Change circle radius</string>
+    <string name="igm_option_location_icon_circle_color">Change circle color</string>
+
+    <!-- Misc -->
+    <string name="igm_category_misc">Misc</string>
+    <string name="igm_name_misc_projection">Projection</string>
+    <string name="igm_description_misc_projection">Convert screen position to map coordinates</string>
+    <string name="igm_text_misc_projection_coords_screen">Screen coordinates: </string>
+    <string name="igm_text_misc_projection_coords_map">Map coordinates:</string>
+    <string name="igm_format_misc_projection_coords_screen">(%1$.0f, %2$.0f)</string>
+    <string name="igm_format_misc_projection_coords_map">(%1$.5f, %2$.5f)</string>
+
+    <!-- Coordinate conversion -->
+    <string name="igm_name_misc_coordinates_conversion">Coordinates Conversion</string>
+    <string name="igm_description_misc_coordinates_conversion">Coordinate conversion</string>
+    <string name="igm_text_misc_coordinates_wgs84">WGS84 coordinates</string>
+    <string name="igm_coordinates_conversion">Convert coordinates</string>
+    <string name="igm_format_misc_coordinates_wgs84">(%1$.5f, %2$.5f)</string>
+
+</resources>

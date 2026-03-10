@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/igm_app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.inavi.global.mapsdk.Appkey"
+            android:value="YOUR_APP_KEY"/>
+
+        <!-- Map -->
+        <activity
+            android:name=".view.map.IgmMapFragmentActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_map_fragment"
+            android:label="@string/igm_name_map_fragment">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_map" />
+        </activity>
+
+        <activity
+            android:name=".view.map.IgmMapViewActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_map_view"
+            android:label="@string/igm_name_map_view">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_map" />
+        </activity>
+
+        <!-- Shape -->
+        <activity
+            android:name=".view.shape.IgmMarkerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_marker"
+            android:label="@string/igm_name_marker">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.IgmMarkerOverlapActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_marker_overlap"
+            android:label="@string/igm_name_marker_overlap">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.IgmInfoWindowActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_info_window"
+            android:label="@string/igm_name_info_window">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.IgmPolygonActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_polygon"
+            android:label="@string/igm_name_polygon">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.IgmPolylineActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_polyline"
+            android:label="@string/igm_name_polyline">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.IgmCircleActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_circle"
+            android:label="@string/igm_name_circle">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <activity
+            android:name=".view.shape.GlobalZIndexActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_global_z_index"
+            android:label="@string/igm_name_global_z_index">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_shapes" />
+        </activity>
+
+        <!-- Cluster -->
+        <activity
+            android:name=".view.cluster.MarkerClusteringActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_marker_clustering"
+            android:label="@string/igm_name_marker_clustering">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_clustering" />
+        </activity>
+
+        <!-- Camera -->
+        <activity
+            android:name=".view.camera.CameraMoveActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_camera_move"
+            android:label="@string/igm_name_camera_move">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_camera" />
+        </activity>
+
+        <activity
+            android:name=".view.camera.CameraFitBoundsActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_camera_fit_bounds"
+            android:label="@string/igm_name_camera_fit_bounds">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_camera" />
+        </activity>
+
+        <activity
+            android:name=".view.camera.CameraEventsActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_camera_events"
+            android:label="@string/igm_name_camera_events">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_camera" />
+        </activity>
+
+        <!-- Map Options -->
+
+        <activity
+            android:name=".view.option.MapPaddingActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_map_option_padding">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_map_option" />
+        </activity>
+
+        <activity
+            android:name=".view.option.MapGestureActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_map_option_gesture">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_map_option" />
+        </activity>
+
+        <activity
+            android:name=".view.option.MapControllerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_map_option_controller">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_map_option" />
+        </activity>
+
+        <!-- Click Event -->
+        <activity
+            android:name=".view.event.MapClickEventActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_event_click_map"
+            android:label="@string/igm_name_event_click_map">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_event" />
+        </activity>
+
+        <activity
+            android:name=".view.event.ShapeClickEventActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_event_click_shape"
+            android:label="@string/igm_name_event_click_shape">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_event" />
+        </activity>
+
+        <!-- Location -->
+        <activity
+            android:name=".view.location.UserTrackingModeActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_location_tracking_mode"
+            android:label="@string/igm_name_location_tracking_mode">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_location" />
+        </activity>
+
+        <activity
+            android:name=".view.location.LocationIconActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_location_icon"
+            android:label="@string/igm_name_location_icon">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_location" />
+        </activity>
+
+        <!-- Etc -->
+        <activity
+            android:name=".view.etc.ProjectionActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_misc_projection"
+            android:label="@string/igm_name_misc_projection">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_misc" />
+        </activity>
+
+        <activity
+            android:name=".view.etc.CoordinatesConversionActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:description="@string/igm_description_misc_coordinates_conversion"
+            android:label="@string/igm_name_misc_coordinates_conversion">
+            <meta-data
+                android:name="@string/igm_category"
+                android:value="@string/igm_category_misc" />
+        </activity>
+
+    </application>
+
+</manifest>
