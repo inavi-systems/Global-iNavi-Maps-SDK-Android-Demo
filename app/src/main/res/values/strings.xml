@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="igm_app_name">Global iNavi Maps Demo</string>
+    <string name="igm_app_name">U-Atlas</string>
     <string name="igm_category">category</string>
 
     <!-- Map -->
